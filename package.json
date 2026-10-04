@@ -1,0 +1,45 @@
+{
+  "name": "pennywise-api",
+  "version": "0.0.1",
+  "description": "Pennywise Backend Server for Pennywise API",
+  "keywords": [
+    "database",
+    "typeorm",
+    "express"
+  ],
+  "homepage": "https://github.com/mowglixx/pennywise-reborn-api",
+  "bugs": {
+    "url": "https://github.com/mowglixx/pennywise-reborn-api/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mowglixx/pennywise-reborn-api.git"
+  },
+  "license": "AGPL-3.0",
+  "author": "Daniel Monaghan (mowglixx)",
+  "type": "module",
+  "main": "src/app.ts",
+  "scripts": {
+    "help": "echo \"For production, use `npm start`, for development use `npm run dev`\"",
+    "start": "tsx ./src/app.ts",
+    "dev": "dotenv run -f .env.development -- tsx --watch ./src/app.ts --watch ./.env.development"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.3",
+    "express": "^5.2.1",
+    "pg": "^8.23.0",
+    "tsx": "^4.23.15",
+    "cors": "^2.8.6"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/dotenv": "^6.1.1",
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.6.2",
+    "@types/pg": "^8.23.1",
+    "typescript": "^7.0.2"
+  },
+  "allowScripts": {
+    "esbuild@0.28.2": true
+  }
+}

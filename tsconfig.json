@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "module": "esnext",
+    "rewriteRelativeImportExtensions": true,
+    "erasableSyntaxOnly": true,
+    "verbatimModuleSyntax": true,
+    "noEmit": false,
+    "strict": true,
+    "skipLibCheck": true,
+    "rootDir":"src",
+    "outDir": "build",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "types": [
+      "node", "express", "cors", "dotenv", "pg"
+    ],
+  }
+}
